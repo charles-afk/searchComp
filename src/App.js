@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
 import Search from './Search';
-
+import { useState, useEffect } from 'react';
 function App() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(()=>{
+    console.log(searchQuery)
+  },[searchQuery])
+  
   return (
     <div>
-      <Search/>
+      <Search setSearchQuery={setSearchQuery}/>
     </div>
   );
 }
