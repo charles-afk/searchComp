@@ -1,15 +1,9 @@
 import Search from './Search';
-import { useState, useEffect } from 'react';
-function App() {
-  const [searchQuery, setSearchQuery] = useState("");
 
-  useEffect(()=>{
-    console.log(searchQuery)
-  },[searchQuery])
-  
+function App() {
   return (
     <div>
-      <Search setSearchQuery={setSearchQuery}/>
+      <Search/>
     </div>
   );
 }

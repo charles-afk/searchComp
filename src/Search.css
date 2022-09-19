@@ -1,0 +1,39 @@
+@keyframes expandSearch {
+    0% {width:25px;}
+    100% {width:255px;}
+}
+
+.openSearch {
+    animation-name: expandSearch;
+    animation-duration: .4s;
+    width: 255px;
+    height: 25px;
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: .25rem;
+    padding-top: .37rem;
+    cursor: pointer;
+}
+
+@keyframes collapseSearch {
+    0% {width:255px;}
+    100% {width:25px;}
+}
+
+.closeSearch {
+    animation-name: collapseSearch;
+    animation-duration: .4s;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: .37rem;
+    cursor: pointer;
+    margin-right: .25rem;
+}
